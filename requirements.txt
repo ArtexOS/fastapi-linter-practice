@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pytest
+httpx
+black
+flake8
+isort
+mypy
