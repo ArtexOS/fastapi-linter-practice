@@ -25,14 +25,11 @@ jobs:
 
       - name: Run Linters
         run: |
-          isort --check --diff .
-          black --check .
-          flake8 .
-
-      - name: Run Type Checking (Mypy)
-        run: |
-          mypy . --ignore-missing-imports
+          isort app --check-only
+          black app --check
+          flake8 app
+          mypy app --ignore-missing-imports
 
       - name: Run Tests (Pytest)
         run: |
-          pytest
+          pytest app/
