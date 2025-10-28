@@ -21,6 +21,4 @@ def get_items():
         "item2",
     ]
 
-    return {
-        "items": items_list
-    }
+    return {"items": items_list}
